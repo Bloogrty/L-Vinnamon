@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Vinnamon</title>
+    <link rel="icon" href="../image/logo.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="../style/registerstyle.css" />
+    <script defer src="/L ' Vinnamon/script/register.js"></script>
+  </head>
+  <body>
+    <div class="regist">
+      <h1>Join Us!</h1>
+      <p>Be part of LVinnamon's Flavorful Community</p>
+      <br />
+
+      <form id="form" onsubmit="validation(event)" action="">
+        <label for="name">Name</label> <br />
+        <input type="text" id="name" size="40" /><br />
+        <div id="error_name" class="error"></div>
+
+        <br />
+
+        <label for="reg">Region</label> <br />
+        <select name="region" id="region">
+          <option value="australia">Australia</option>
+          <option value="china">China</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="singapore">Singapore</option>
+          <option value="unitedstates">United States</option>
+        </select>
+        <br />
+        <div id="error_reg" class="error"></div>
+
+        <br />
+        <label for="password">Password</label><br />
+        <input type="password" id="password" /> <br />
+        <div id="error_pass" class="error"></div>
+
+        <br />
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="genderlbl">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="genderlbl">Female</label> <br />
+        <div id="error_gender" class="error"></div>
+
+        <br />
+
+        <input type="checkbox" name="checkbox" id="checkbox" /> I agree with
+        LVinnamon's terms & conditions <br />
+        <div id="error_tnc" class="error"></div>
+
+        <br />
+
+        <button id="regist_button" type="submit">Register Now</button>
+      </form>
+    </div>
+  </body>
+</html>

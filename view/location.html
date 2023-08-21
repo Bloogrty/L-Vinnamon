@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - L'Vinnamon</title>
+    <link rel="stylesheet" href="../style/locationstyle.css" />
+    <link rel="icon" href="/L ' Vinnamon/image/logo.png" type="image/png" sizes="16x16">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/toogle.js"></script>
+</head>
+
+<body>
+     <!-- Header -->
+     <header>
+        <nav>
+          <div class="logo">
+            <a href="../view/home.html" class="">
+              <img src="../image/logo.png" alt="L'Vinnamon Logo" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="menu_item">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About Us</a>
+                  <ul>
+                      <li><a href="aboutus.html">Company Profile</a></li>
+                      <li><a href="aboutus-history.html">History</a></li>
+                  </ul>
+              </li>
+              <li class="current_page"><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+  
+          <div class="right_menu">
+            <a href="register.html" class="cta_signup"> Register </a>
+          </div>
+          <div class="burger-menu" onclick="toggleSidebar()">
+            <img src="../image/burger-bar.png" class="burger" alt="" />
+          </div>
+        </nav>
+      </header>
+  
+      <section class="side-navbar" onclick="toggleSidebar()">
+        <div class="side__burger-menu" onclick="toggleSidebar()">
+          <img src="../image/burger-bar.png" class="burger" onclick="toggleSidebar()" />
+        </div>
+        <div class="side-menu">
+          <ul class="side-menu_item">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="aboutus.html">Company Profile</a></li>
+            <li><a href="aboutus-history.html">History</a></li>            <li class="current_page"><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+  
+        <div class="side-right_menu">
+          <a href="register.html" class="cta_signup"> Register </a>
+        </div>
+      </section>
+
+      <main>
+        <div class="location-group">
+            <div class="section1">
+                <p class="lbl">Find Us!</p>
+                <div class="contact">
+                    <img src="../image/icon-loc1.png" alt="" class="icon-loc1">
+                    <div class="contact-group">
+                        <label for="" class="lbl-contact">Telephone: </label>
+                        <label for="" class="contact-desc">
+                        (+62) 1807 4432 25 (Whatsapp) 
+                        <br>
+                        (021) 5530213 (Telephone No.) </label>
+                    </div>
+                </div>
+ 
+            
+                <div class="contact">
+                    <img src="../image/icon-loc2.png" alt="" class="icon-loc1">
+                    <div class="contact-group">
+                        <label for="" class="lbl-contact">Business Hours: </label>
+                        <label for="" class="contact-desc">
+                        Monday to Saturday from 8:00 AM-7:00 PM,
+                        and Sundays from 9:00 AM to 9:00 PM.</label>
+                    </div>
+                </div>
+          
+                <div class="contact">
+                    <img src="../image/icon-loc3.png" alt="" class="icon-loc1">
+                    <div class="contact-group">
+                        <label for="" class="lbl-contact">Address: </label>
+                        <label for="" class="contact-desc">
+                        Jl. Raya Merdeka No.5, RT.003/RW.001, Gerendeng, Kec. Karawaci, 
+                        Kota Tangerang, Banten 15113 </label>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9781.150140978818!2d106.82178979404489!3d-6.177706455417452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1661963350675!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section2">
+                    <p class="lbl">Get in Touch!</p>
+                
+                    <label class="lbl-message">Name:</label>
+                    <input type="text" name="" id="" placeholder="Please enter your fullname">
+
+                    <label class="lbl-message">E-mail:</label>
+                    <input type="email" name="" id="" placeholder="Please enter your Email">
+
+                    <label class="lbl-message">Message:</label>
+                    <textarea name="" id="" cols="40" rows="20"placeholder="Please enter a message"></textarea>
+                    
+                    <a href="home.html" class="btn">Submit</a>
+            </div>
+        </div>
+    </main>
+
+
+      <footer>
+        <div class="footer-head">
+  
+            <div class="footer__left">
+                <img src="../image/logo.png" alt="logo" class="logo-footer"/>
+               
+            </div>
+  
+            <div class="footer__right">
+                <p>Reach us through Social Media!</p>
+                <div class="footer__right-socmed">
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com">
+                        <img src="../image/ig.png" alt="" />
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com">
+                        <img src="../image/fb.png" alt="" />
+                    </a>
+                    <!-- whatsapp -->
+                    <a href="https://www.whatsapp.com">
+                        <img src="../image/wa.png" alt="" />
+                    
+                </div>
+            </div>
+  
+        </div>
+  
+        <div class="footer-bottom">
+            <p>© 2023 L'Vinnamon. All Rights Reserved</p>
+        </div>
+      </footer>
+
+</body>
+</html>

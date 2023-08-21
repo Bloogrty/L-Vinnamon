@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Vinnamon</title>
+    <link rel="icon" href="../image/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../style/aboutstyle.css" />
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/toogle.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="../view/home.html" class="">
+              <img src="../image/logo.png" alt="L'Vinnamon Logo" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="menu_item">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About Us</a>
+                  <ul>
+                      <li class="current_page"><a href="aboutus.html">Company Profile</a></li>
+                      <li><a href="aboutus-history.html">History</a></li>
+                  </ul>
+              </li>
+              <li><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+  
+          <div class="right_menu">
+            <a href="register.html" class="cta_signup"> Register </a>
+          </div>
+          <div class="burger-menu" onclick="toggleSidebar()">
+            <img src="../image/burger-bar.png" class="burger" alt="" />
+          </div>
+        </nav>
+      </header>
+  
+      <section class="side-navbar" onclick="toggleSidebar()">
+        <div class="side__burger-menu" onclick="toggleSidebar()">
+          <img src="../image/burger-bar.png" class="burger" onclick="toggleSidebar()"/>
+        </div>
+        <div class="side-menu">
+          <ul class="side-menu_item">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="current_page"><a href="aboutus.html">Company Profile</a></li>
+            <li><a href="aboutus-history.html">History</a></li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+  
+        <div class="side-right_menu">
+          <a href="register.html" class="cta_signup"> Register </a>
+        </div>
+      </section>
+    
+    <main>
+        <div class="top-content">
+            <h1>We are L'Vinnamon</h1>
+            <p>L’Vinnamon is a business that specializes in the sale of cinnamon rolls. 
+                There are a lot of branches all around the world. Our store provides 
+                baked goods that contain cinnamon and beverages.</p>
+        </div>
+
+        <div class="middle-content">
+            <div class="section">
+                <img src="../image/company1.jpg" class="img_aboutus">
+                <div class="teks-content">
+                    <h1>Our Profile</h1>
+                    <p>LVinnamon Bakery is a charming and thriving bakery dedicated to 
+                        creating and sharing the exquisite flavors of cinnamon with our 
+                        customers. With a passion for baking and a commitment to quality,
+                        we have established ourselves as a premier destination for 
+                        cinnamon-infused treats.</p>
+                </div>
+            </div>
+
+            <div class="section-vision">
+                <div class="teks-content">
+                    <h1>Vision</h1>
+                    <p>To be the ultimate destination for cinnamon lovers, 
+                        known for our exceptional quality and delightful flavors.</p>
+                    <br>
+                    <h1>Mission</h1>
+                    <p>To share the joy of cinnamon treats by crafting exceptional 
+                        baked goods using the finest ingredients</p>
+                </div>
+                <img src="../image/company2.jpg" class="img_aboutus">
+            </div>
+        </div>
+
+        <div class="bottom-quote">
+            <h1><i>Cinnamon. Savor. Delight</i></h1>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-head">
+
+            <div class="footer__left">
+                <img src="../image/logo.png" alt="logo" class="logo-footer"/>
+
+            </div>
+
+            <div class="footer__right">
+                <p>Reach us through Social Media!</p>
+                <div class="footer__right-socmed">
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com">
+                        <img src="../image/ig.png" alt="" />
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com">
+                        <img src="../image/fb.png" alt="" />
+                    </a>
+                    <!-- whatsapp -->
+                    <a href="https://www.whatsapp.com">
+                        <img src="../image/wa.png" alt="" />
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 L'Vinnamon. All Rights Reserved</p>
+        </div>
+
+    </footer>
+</body>
+</html>

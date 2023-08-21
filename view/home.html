@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/homestyle.css" />
+    <script src="../script/reload-script.js"></script>
+    <link rel="icon" href="/L ' Vinnamon/image/logo.png" type="image/png" sizes="16x16">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/toogle.js"></script>
+    
+    <title>Home - L'Vinnamon</title>
+
+    
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="../view/home.html" class="">
+            <img src="../image/logo.png" alt="L'Vinnamon Logo" />
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu_item">
+            <li class="current_page"><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="aboutus.html">About Us</a>
+              <ul>
+                <li><a href="aboutus.html">Company Profile</a></li>
+                <li><a href="aboutus-history.html">History</a></li>
+              </ul>
+            </li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+
+        <div class="right_menu">
+          <a href="register.html" class="cta_signup"> Register </a>
+        </div>
+        <div class="burger-menu" onclick="toggleSidebar()">
+          <img src="../image/burger-bar.png" class="burger" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="side-navbar" onclick="toggleSidebar()">
+      <div class="side__burger-menu" onclick="toggleSidebar()">
+        <img src="../image/burger-bar.png" class="burger" onclick="toggleSidebar()" />
+      </div>
+      <div class="side-menu">
+        <ul class="side-menu_item">
+          <li class="current_page"><a href="home.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutus.html">Company Profile</a></li>
+          <li><a href="aboutus-history.html">History</a></li>
+          </li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <div class="side-right_menu">
+        <a href="register.html" class="cta_signup"> Register </a>
+      </div>
+    </section>
+
+    <main>
+      <div class="intro-banner">
+        <img src="../image/home-banner.png" class="banner-img"> 
+
+        <div class="teks-banner">
+          <h1 class="h1-banner">FRESHLY BAKED , made with LOVE...</h1>
+          <p>Indulge in the irresistible allure of freshly baked delights, where the aroma of 
+            cinnamon dances with every heavenly bite.</p>
+          <a href="#view-category">
+              <button class="btn-banner">Explore Now</button>
+          </a>
+        </div>
+      </div>
+   
+      <!-- CATEGORIES -->
+      <div class="categories" id="view-category">
+        <div class="teks-category">
+          <h2 class="h2-subjudul">Product Categories</h2>
+          <!-- <hr class="break" /> -->
+          <br>
+        </div>
+          
+         <!-- Cinnamon Pastries -->
+         <div class="group-logo">
+          <div class="logo-category">
+            <img src="../image/category1.png" class="logo-icon" />
+            <h2 class="h2icon">Cinnamon Pastries</h2>
+         </div>
+
+          <!-- Cakes  -->
+          <div class="logo-category">
+            <img src="../image/category2.png" class="logo-icon" />
+            <h2 class="h2icon">Cinnamon Cakes</h2>
+          </div>
+
+          <!-- Cookies -->
+          <div class="logo-category">
+            <img src="../image/category3.png" class="logo-icon" />
+            <h2 class="h2icon">Cinnamon Cookies</h2>
+          </div>
+
+          <!-- Beverages  -->
+          <div class="logo-category">
+            <img src="../image/category4.png" class="logo-icon" />
+            <h2 class="h2icon">Beverages</h2>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- SLIDER -->
+
+      <div class="slider-carousel">
+        <div class="carousel-arrow" id="left-arrow">
+          <img src="../image/left.png" alt="" />
+        </div>
+        <div class="carousel">
+          <div class="carousel-image-container">
+            <img src="../image/promo1.png" alt="" class="carousel-image" />
+            <img src="../image/promo2.png" alt="" class="carousel-image" />
+            <img src="../image/promo3.png" alt="" class="carousel-image" />
+          </div>
+        </div>
+        <div class="carousel-arrow" id="right-arrow">
+          <img src="../image/right.png" alt="" />
+        </div>
+      </div>
+
+      <!-- BEST SELLERS -->
+      <div class="bestseller">
+          <h2 class="h2-subjudul2">Our Best Sellers</h2>
+          <!-- <hr class="break2" /> -->
+
+          <div class="bestseller-group">
+            <div class="bestseller-products">
+              <img src="../image/cookie2.png" alt="">
+              <h2 class="h2-bestseller">Cinnamon Cookie</h2>
+              <p class="price">Rp. 15.000</p>
+            </div>
+
+            <div class="bestseller-products">
+              <img src="../image/pastry3.png" alt="">
+              <h2 class="h2-bestseller">Cinnamon Bagels</h2>
+              <p class="price">Rp. 25.000/pc</p>
+           </div>
+
+            <div class="bestseller-products">
+              <img src="../image/drink1.png" alt="">
+              <h2 class="h2-bestseller">Cinnamon Streusel Cake</h2>
+              <p class="price">Rp. 25.000</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="button-products-page">
+        <a href="products.html" class="btn">See more products</a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-head">
+
+          <div class="footer__left">
+              <img src="../image/logo.png" alt="logo" class="logo-footer"/>
+              
+          </div>
+
+          <div class="footer__right">
+              <p>Reach us through Social Media!</p>
+              <div class="footer__right-socmed">
+                  <!-- instagram -->
+                  <a href="https://www.instagram.com">
+                      <img src="../image/ig.png" alt="" />
+                  </a>
+                  <!-- facebook -->
+                  <a href="https://www.facebook.com">
+                      <img src="../image/fb.png" alt="" />
+                  </a>
+                  <!-- whatsapp -->
+                  <a href="https://www.whatsapp.com">
+                      <img src="../image/wa.png" alt="" />
+                  
+              </div>
+          </div>
+
+      </div>
+
+      <div class="footer-bottom">
+          <p>© 2023 L'Vinnamon. All Rights Reserved</p>
+      </div>
+    </footer>
+    
+    <script src="../script/carousel.js"></script>
+  </body>
+</html>

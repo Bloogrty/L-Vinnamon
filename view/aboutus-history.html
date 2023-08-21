@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Vinnamon</title>
+    <link rel="icon" href="../image/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../style/history.css">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/toogle.js"></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="../view/home.html" class="">
+              <img src="../image/logo.png" alt="L'Vinnamon Logo" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="menu_item">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="aboutus.html">About Us</a>
+                  <ul>
+                      <li><a href="aboutus.html">Company Profile</a></li>
+                      <li class="current_page"><a href="aboutus-history.html">History</a></li>
+                  </ul>
+              </li>
+              <li><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+  
+          <div class="right_menu">
+            <a href="register.html" class="cta_signup"> Register </a>
+          </div>
+          <div class="burger-menu" onclick="toggleSidebar()">
+            <img src="../image/burger-bar.png" class="burger" alt="" />
+          </div>
+        </nav>
+      </header>
+  
+      <section class="side-navbar" onclick="toggleSidebar()">
+        <div class="side__burger-menu" onclick="toggleSidebar()">
+          <img src="../image/burger-bar.png" class="burger" onclick="toggleSidebar()"/>
+        </div>
+        <div class="side-menu">
+          <ul class="side-menu_item">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="aboutus.html">Company Profile</a></li>
+            <li class="current_page"><a href="aboutus-history.html">History</a></li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+  
+        <div class="side-right_menu">
+          <a href="register.html" class="cta_signup"> Register </a>
+        </div>
+      </section>
+
+      <main>
+        <div class="banner">
+            <h1>History of L'Vinnamon </h1>
+            <P>LVinnamon Bakery has a rich and flavorful history that spans over a decade.</P>
+        </div>
+
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>Establishment of L'Vinnamon</h1>
+                            <p>L'Vinnamon is founded as a business specializing in the sale of cinnamon rolls. The first L'Vinnamon store is opened, offering freshly baked cinnamon rolls and beverages.</p>
+                            <span class="right-arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>Expansion of Branches</h1>
+                            <p>L'Vinnamon experiences rapid growth and opens multiple branches in different cities within the country. The popularity of LVinnamon's cinnamon rolls attracts a large customer base.</p>
+                            <span class="left-arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>International Expansion</h1>
+                            <p>L'Vinnamon is founded as a business specializing in the sale of cinnamon rolls. The first LVinnamon store is opened, offering freshly baked cinnamon rolls and beverages.</p>
+                            <span class="right-arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>Menu Diversification</h1>
+                            <p>L'Vinnamon expands its menu to include a variety of baked goods that contain cinnamon. The menu offerings now include cinnamon-flavored pastries, cakes, and bread, alongside the signature cinnamon rolls.</p>
+                            <span class="left-arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>Digital Business Initiative</h1>
+                            <p>L'Vinnamon recognizes the importance of digital business and plans to enter the online marketplace. The company starts developing an online ordering platform and explores digital marketing strategies to engage with customers.</p>
+                            <span class="right-arrow"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h2 class="date">2010, January 27</h2>
+                            <h1>Launch of Digital Business</h1>
+                            <p>L'Vinnamon continues to invest in digital marketing, customer engagement, and technological advancements to enhance the digital experience.</p>
+                            <span class="left-arrow"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+      </main>
+
+      <footer>
+        <div class="footer-head">
+  
+            <div class="footer__left">
+                <img src="../image/logo.png" alt="logo" class="logo-footer"/>
+               
+            </div>
+  
+            <div class="footer__right">
+                <p>Reach us through Social Media!</p>
+                <div class="footer__right-socmed">
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com">
+                        <img src="../image/ig.png" alt="" />
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com">
+                        <img src="../image/fb.png" alt="" />
+                    </a>
+                    <!-- whatsapp -->
+                    <a href="https://www.whatsapp.com">
+                        <img src="../image/wa.png" alt="" />
+                    
+                </div>
+            </div>
+  
+        </div>
+  
+        <div class="footer-bottom">
+            <p>© 2023 L'Vinnamon. All Rights Reserved</p>
+        </div>
+      </footer>
+  
+    
+</body>
+</html>

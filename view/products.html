@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Vinnamon</title>
+    <link rel="icon" href="../image/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../style/productstyle.css" />
+    <script src="../script/product.js" defer></script>
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/toogle.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="../view/home.html" class="">
+              <img src="../image/logo.png" alt="L'Vinnamon Logo" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="menu_item">
+                <li><a href="home.html">Home</a></li>
+                <li class="current_page"><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a>
+                    <ul>
+                        <li><a href="aboutus.html">Company Profile</a></li>
+                        <li><a href="aboutus-history.html">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+  
+          <div class="right_menu">
+            <a href="register.html" class="cta_signup"> Register </a>
+          </div>
+          <div class="burger-menu" onclick="toggleSidebar()">
+            <img src="../image/burger-bar.png" class="burger" alt="" />
+          </div>
+        </nav>
+      </header>
+  
+      <section class="side-navbar" onclick="toggleSidebar()">
+        <div class="side__burger-menu" onclick="toggleSidebar()">
+          <img src="../image/burger-bar.png" class="burger" onclick="toggleSidebar()" />
+        </div>
+        <div class="side-menu">
+          <ul class="side-menu_item">
+            <li><a href="home.html">Home</a></li>
+            <li class="current_page"><a href="products.html">Products</a></li>
+            <li><a href="aboutus.html">Company Profile</a></li>
+            <li><a href="aboutus-history.html">History</a></li>
+            </li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+  
+        <div class="side-right_menu">
+          <a href="register.html" class="cta_signup"> Register </a>
+        </div>
+      </section>
+
+    <main>
+        <div class="banner-product">
+            <h1>Cinnamon Bliss</h1>
+            <p>At L’Vinnamon we take pride in crafting a delightful 
+                range of cinnamon-infused products that are sure to 
+                tantalize your taste buds. From classic favorites to 
+                innovative creations, here are some of our irresistible offerings.</p>
+        </div>
+
+        <div class="isi-product">
+            <h2>Select Category</h2>
+            <!-- filter -->
+            <div class="filter">
+                <div class="select">
+                    <span class="selected">All Products</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="filter_menu">
+                    <li class="active">All Products</li>
+                    <li>Pastries</li>
+                    <li>Cakes</li>
+                    <li>Cookies</li>
+                    <li>Beverages</li>
+                </ul>
+            </div>
+
+            <!-- content -->
+            <!-- all products -->
+            <div class="content_all">
+                <div class="group_card">
+                    <!-- pastry 1 -->
+                    <div class="food_card">
+                        <img src="../image/pastry1.png" alt="Cinnamon Swirl Bread">
+                        <h3>Cinnamon Swirl Bread</h3>
+                        <p>Rp 5.000 / slice</p>
+                    </div>
+                    <!-- pastry 2 -->
+                    <div class="food_card">
+                        <img src="../image/pastry2.png" alt="Cinnamon Raisin Bread">
+                        <h3>Cinnamon Raisin Bread</h3>
+                        <p>Rp 6.000 / slice</p>
+                    </div>
+                    <!-- pastry 3 -->
+                    <div class="food_card">
+                        <img src="../image/pastry3.png" alt="Cinnamon Bagels">
+                        <h3>Cinnamon Bagels</h3>
+                        <p>Rp 12.000</p>
+                    </div>
+
+                    <!-- cake 1 -->
+                    <div class="food_card">
+                        <img src="../image/cake1.png" alt="Cinnamon Streusel Cake">
+                        <h3>Cinnamon Streusel Cake</h3>
+                        <p>Rp 22.000 / slice</p>
+                    </div>                  
+                    <!-- cake 2 -->
+                    <div class="food_card">
+                        <img src="../image/cake2.png" alt="Cinnamon Coffee Cake">
+                        <h3>Cinnamon Coffee Cake</h3>
+                        <p>Rp 18.000 / slice</p>
+                    </div>  
+                    <!-- cake 3 -->
+                    <div class="food_card">
+                        <img src="../image/cake3.png" alt="Cinnamon Apple Cake">
+                        <h3>Cinnamon Apple Cake</h3>
+                        <p>Rp 20.000 / slice</p>
+                    </div>  
+
+                    <!-- cookie 1 -->
+                    <div class="food_card">
+                        <img src="../image/cookie1.png" alt="Cinnamon Oatmeal Cookies">
+                        <h3>Cinnamon Oatmeal Cookies</h3>
+                        <p>Rp 12.000 / piece</p>
+                    </div>                  
+                    <!-- cookie 2 -->
+                    <div class="food_card">
+                        <img src="../image/cookie2.png" alt="Cinnamon Snickerdoodles">
+                        <h3>Cinnamon Snickerdoodles</h3>
+                        <p>Rp 10.000</p>
+                    </div>  
+
+                    <!-- drink 1 -->
+                    <div class="food_card">
+                        <img src="../image/drink1.png" alt="Cinnamon Chai Tea">
+                        <h3>Cinnamon Chai Tea</h3>
+                        <p>Rp 21.000</p>
+                    </div>  
+                    <!-- drink 2 -->
+                    <div class="food_card">
+                        <img src="../image/drink3.png" alt="Cinnamon Spiced Coffee">
+                        <h3>Cinnamon Spiced Coffee</h3>
+                        <p>Rp 23.000</p>
+                    </div>  
+                    <!-- drink 3 -->
+                    <div class="food_card">
+                        <img src="../image/drink4.png" alt="Cinnamon Hot Chocolate">
+                        <h3>Cinnamon Hot Chocolate</h3>
+                        <p>Rp 28.000</p>
+                    </div>  
+                    <!-- drink 4 -->
+                    <div class="food_card">
+                        <img src="../image/drink2.png" alt="Cinnamon Smoothies">
+                        <h3>Cinnamon Smoothies</h3>
+                        <p>Rp 25.000</p>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- pastries -->
+            <div class="content_pastries">
+                <div class="group_card">
+                    <!-- pastry 1 -->
+                    <div class="food_card">
+                        <img src="../image/pastry1.png" alt="Cinnamon Swirl Bread">
+                        <h3>Cinnamon Swirl Bread</h3>
+                        <p>Rp 5.000 / slice</p>
+                    </div>
+                    <!-- pastry 2 -->
+                    <div class="food_card">
+                        <img src="../image/pastry2.png" alt="Cinnamon Raisin Bread">
+                        <h3>Cinnamon Raisin Bread</h3>
+                        <p>Rp 6.000 / slice</p>
+                    </div>
+                    <!-- pastry 3 -->
+                    <div class="food_card">
+                        <img src="../image/pastry3.png" alt="Cinnamon Bagels">
+                        <h3>Cinnamon Bagels</h3>
+                        <p>Rp 12.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cakes -->
+            <div class="content_cakes">
+                <div class="group_card">
+                    <!-- cake 1 -->
+                    <div class="food_card">
+                        <img src="../image/cake1.png" alt="Cinnamon Streusel Cake">
+                        <h3>Cinnamon Streusel Cake</h3>
+                        <p>Rp 22.000 / slice</p>
+                    </div>                  
+                    <!-- cake 2 -->
+                    <div class="food_card">
+                        <img src="../image/cake2.png" alt="Cinnamon Coffee Cake">
+                        <h3>Cinnamon Coffee Cake</h3>
+                        <p>Rp 18.000 / slice</p>
+                    </div>  
+                    <!-- cake 3 -->
+                    <div class="food_card">
+                        <img src="../image/cake3.png" alt="Cinnamon Apple Cake">
+                        <h3>Cinnamon Apple Cake</h3>
+                        <p>Rp 20.000 / slice</p>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- cookies -->
+            <div class="content_cookies">
+                <div class="group_card">
+                    <!-- cookie 1 -->
+                    <div class="food_card">
+                        <img src="../image/cookie1.png" alt="Cinnamon Oatmeal Cookies">
+                        <h3>Cinnamon Oatmeal Cookies</h3>
+                        <p>Rp 12.000 / piece</p>
+                    </div>                  
+                    <!-- cookie 2 -->
+                    <div class="food_card">
+                        <img src="../image/cookie2.png" alt="Cinnamon Snickerdoodles">
+                        <h3>Cinnamon Snickerdoodles</h3>
+                        <p>Rp 10.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- beverages -->
+            <div class="content_beverages">
+                <div class="group_card">
+                    <!-- drink 1 -->
+                    <div class="food_card">
+                        <img src="../image/drink1.png" alt="Cinnamon Chai Tea">
+                        <h3>Cinnamon Chai Tea</h3>
+                        <p>Rp 21.000</p>
+                    </div>  
+                    <!-- drink 2 -->
+                    <div class="food_card">
+                        <img src="../image/drink3.png" alt="Cinnamon Spiced Coffee">
+                        <h3>Cinnamon Spiced Coffee</h3>
+                        <p>Rp 23.000</p>
+                    </div>  
+                    <!-- drink 3 -->
+                    <div class="food_card">
+                        <img src="../image/drink4.png" alt="Cinnamon Hot Chocolate">
+                        <h3>Cinnamon Hot Chocolate</h3>
+                        <p>Rp 28.000</p>
+                    </div>  
+                    <!-- drink 4 -->
+                    <div class="food_card">
+                        <img src="../image/drink2.png" alt="Cinnamon Smoothies">
+                        <h3>Cinnamon Smoothies</h3>
+                        <p>Rp 25.000</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-head">
+
+            <div class="footer__left">
+                <img src="../image/logo.png" alt="logo" class="logo-footer"/>
+               
+            </div>
+
+            <div class="footer__right">
+                <p>Reach us through Social Media!</p>
+                <div class="footer__right-socmed">
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com">
+                        <img src="../image/ig.png" alt="" />
+                    </a>
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com">
+                        <img src="../image/fb.png" alt="" />
+                    </a>
+                    <!-- whatsapp -->
+                    <a href="https://www.whatsapp.com">
+                        <img src="../image/wa.png" alt="" />
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 L'Vinnamon. All Rights Reserved</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

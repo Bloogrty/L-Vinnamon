@@ -1,0 +1,82 @@
+@import url('../style/headerfooter.css');
+
+body {
+    background-image: url('../image/regist-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+.regist {
+    /* text-align: center; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #FFFFFF;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+.regist h1 {
+    color: #573400;
+    margin-bottom: .25em;
+}
+
+.regist p {
+    color: #A8742E;
+}
+
+
+input[type="text"], input[type="password"] {
+    border-radius: 20px;
+    height: 30px;
+    width: 350px;
+    padding: 1em;
+    border: 1px solid;
+    margin-top: .75em;
+}
+
+select {
+    border-radius: 20px;
+    height: 30px;
+    width: 350px;
+    padding-left: 1em;
+    margin-top: 1em;
+    border: solid 1px;
+}  
+
+input[type="radio"], input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: .5em;
+}
+
+#male, #female {
+    margin-left: 1em;
+}
+
+#regist_button {
+    padding: .5em 1em;
+    border: solid #573400;
+    background-color: #573400;
+    border-radius: 3em;
+    display: block;
+    margin: 0 auto;
+    width: 10em;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    margin-top: 5px;
+}
+
+#error_pass {
+    width: 350px;
+    margin-bottom: 1em;
+}
